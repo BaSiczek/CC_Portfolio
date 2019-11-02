@@ -1,0 +1,251 @@
+:root {
+    --main-text-color: #222222;
+    --main-theme-color: #FFC53D;
+    --second-theme-color: #FF9A3D;
+    --background-elements-color: #FAFAFF;
+  }
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Raleway, sans-serif;
+    font-style: normal;
+}
+ul {
+    list-style-type: none;
+}
+li, a{
+    text-decoration: none;
+    color: inherit;
+}
+
+header{
+    position: sticky;
+    font-weight: bold;
+    color: #515151;
+    background-color: white;
+    z-index: 10;
+    top: 0px;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.home {
+    width: 80px;
+}
+.home img {
+    height: 50px;
+    margin-top: 10px;
+}
+
+.navbutton li{
+    display: inline-block;
+    padding: 10px 5px;
+    margin: 10px 10px;
+}
+.navbutton{
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+
+}
+.cover{
+    
+    position: relative;
+    
+}
+.cover img{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 600px;
+    margin: 0px;
+}
+.contactbutton{
+    text-align: center;
+}
+.contactbutton li{
+    display: inline-block;
+    padding: 10px 0px;
+    margin: 10px 80px;
+    background: linear-gradient(270deg, var(--main-theme-color) 14%, var(--second-theme-color) 68.5%);
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.contactbutton a{
+    padding: 10px 40px;
+}
+.contactbutton a:hover {
+    border: 1px solid var(--main-theme-color);
+    background-color: white;
+    border-radius: 15px;
+    color: var(--main-theme-color);
+}
+.about-me-section{
+    position: relative;
+}
+.skills-section{
+    position: relative;
+    top: 500px;
+}
+.about-me-grid-container{
+    display: grid;
+    position: absolute;
+    width: 1200px;
+    min-height: 250px;
+    top: 80px;
+    left: 100px;
+    grid-template-columns: 200px 300px 600px;
+    color: var(--main-text-color);
+    background-color: white;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+
+    
+}
+.about-me-grid-container ul{
+    margin: 15px 10px 50px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 160.86%;
+    letter-spacing: 0.02em;
+    border-right: 4px dashed var(--main-theme-color);
+}
+.about-me-grid-container li{
+    padding-top: 5px;
+}
+.highlighted-text {
+    color: var(--main-theme-color);
+}
+.profile-description{
+    margin-top: 20px;
+    margin-left: 10px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 172.35%;
+    letter-spacing: 0.04em;
+}
+.photo {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.icon {
+    width: 85px;
+    height: 100px;
+    object-fit: contain;
+    margin-left: calc(50%-42.5px);
+    margin-top: 0px;
+}
+.skill-box{
+    border-right: 4px dashed var(--main-theme-color);
+    border-left: 4px dashed var(--main-theme-color);
+}
+h1 {
+    position: absolute;
+    animation: left-emerge 2s forwards;
+    text-align: center;
+    width: 100%;
+    top: 100px;
+    font-weight: bold;
+    font-size: 100px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--main-theme-color);
+}
+.background-pannel{
+    position: absolute;
+    background-color: var(--background-elements-color);
+    width: 65%;
+    height: 430px;
+    top: 10px;
+    padding-top: 20px;
+    padding-left: 150px;
+    z-index: -1;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 37px;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
+}
+.skills-container{
+    display: grid;
+    position: absolute;
+    width: 1200px;
+    min-height: 250px;
+    top: 80px;
+    right: 100px;
+    padding: 0 50px;
+    grid-template-columns: repeat(3, 1fr);
+    color: var(--main-text-color);
+    background-color: white;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+}
+.skills-container ul{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+#layer{
+    mix-blend-mode: lighten;
+}
+#sub-title {
+    position: absolute;
+    animation: apear 2s 2s forwards;
+    opacity: 0;
+    text-align: center;
+    width: 100%;
+    top: 200px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+#contact-me-msg{
+    position: relative;
+    text-align: center;
+    padding-top: 620px;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.02em;
+
+    color: var(--main-text-color);
+}
+
+footer {
+    position: absolute;
+    width: 1440px;
+    height: 18px;
+    left: 0px;
+    top: 3510px;
+    
+    font-family: Ubuntu, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #A0A0A0;    
+}
+@keyframes left-emerge {
+    0% {left: -1000px;}
+    100% {left: 0;}
+}
+@keyframes apear {
+    0% {opacity: 0}
+    100% {opacity:1}
+}
